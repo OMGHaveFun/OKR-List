@@ -15,6 +15,15 @@
 		A26780582189AADF00ACC097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26780562189AADF00ACC097 /* LaunchScreen.storyboard */; };
 		A26780632189AADF00ACC097 /* OKR_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780622189AADF00ACC097 /* OKR_ListTests.swift */; };
 		A267806E2189AADF00ACC097 /* OKR_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A267806D2189AADF00ACC097 /* OKR_ListUITests.swift */; };
+		A26780812189CEE200ACC097 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780802189CEE200ACC097 /* Constants.swift */; };
+		A26780832189CF9B00ACC097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A26780822189CF9B00ACC097 /* Localizable.strings */; };
+		A26780852189CFAE00ACC097 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780842189CFAE00ACC097 /* Strings.swift */; };
+		A26780882189D00B00ACC097 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780872189D00B00ACC097 /* UIApplication+Extensions.swift */; };
+		A267808B2189D03A00ACC097 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A267808A2189D03A00ACC097 /* Logger.swift */; };
+		A267808E2189D06A00ACC097 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A267808D2189D06A00ACC097 /* User.swift */; };
+		A26780922189D10E00ACC097 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780912189D10E00ACC097 /* StorageManager.swift */; };
+		A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780952189D2E100ACC097 /* BaseViewController.swift */; };
+		A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780992189D32600ACC097 /* XibLoadableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		A26780692189AADF00ACC097 /* OKR-ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OKR-ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A267806D2189AADF00ACC097 /* OKR_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OKR_ListUITests.swift; sourceTree = "<group>"; };
 		A267806F2189AADF00ACC097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26780802189CEE200ACC097 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A26780822189CF9B00ACC097 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A26780842189CFAE00ACC097 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A26780872189D00B00ACC097 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		A267808A2189D03A00ACC097 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A267808D2189D06A00ACC097 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A26780912189D10E00ACC097 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A26780952189D2E100ACC097 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A26780992189D32600ACC097 /* XibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableView.swift; sourceTree = "<group>"; };
 		A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.debug.xcconfig"; sourceTree = "<group>"; };
 		F617A97EE9BC7ECC3DBD0A72 /* Pods-OKR-List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.release.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +103,6 @@
 				A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */,
 				F617A97EE9BC7ECC3DBD0A72 /* Pods-OKR-List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,12 +139,9 @@
 		A267804C2189AADD00ACC097 /* OKR-List */ = {
 			isa = PBXGroup;
 			children = (
-				A267804D2189AADD00ACC097 /* AppDelegate.swift */,
-				A267804F2189AADD00ACC097 /* ViewController.swift */,
-				A26780512189AADD00ACC097 /* Main.storyboard */,
-				A26780542189AADF00ACC097 /* Assets.xcassets */,
-				A26780562189AADF00ACC097 /* LaunchScreen.storyboard */,
-				A26780592189AADF00ACC097 /* Info.plist */,
+				A267807B2189CE4A00ACC097 /* Classes */,
+				A267807C2189CE5800ACC097 /* Resources */,
+				A267807D2189CE6300ACC097 /* Supporting Files */,
 			);
 			path = "OKR-List";
 			sourceTree = "<group>";
@@ -148,6 +162,130 @@
 				A267806F2189AADF00ACC097 /* Info.plist */,
 			);
 			path = "OKR-ListUITests";
+			sourceTree = "<group>";
+		};
+		A267807B2189CE4A00ACC097 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A267807E2189CEBD00ACC097 /* Application */,
+				A267807F2189CECF00ACC097 /* Constants */,
+				A26780862189CFDC00ACC097 /* Extensions */,
+				A26780892189D02400ACC097 /* Helpers */,
+				A267808C2189D05400ACC097 /* Models */,
+				A267808F2189D0A600ACC097 /* Services */,
+				A26780932189D2B300ACC097 /* View Controllers */,
+				A26780982189D31300ACC097 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A267807C2189CE5800ACC097 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A26780542189AADF00ACC097 /* Assets.xcassets */,
+				A26780562189AADF00ACC097 /* LaunchScreen.storyboard */,
+				A26780822189CF9B00ACC097 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A267807D2189CE6300ACC097 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A26780592189AADF00ACC097 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A267807E2189CEBD00ACC097 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A267804D2189AADD00ACC097 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A267807F2189CECF00ACC097 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A26780802189CEE200ACC097 /* Constants.swift */,
+				A26780842189CFAE00ACC097 /* Strings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A26780862189CFDC00ACC097 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A26780872189D00B00ACC097 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A26780892189D02400ACC097 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A267808A2189D03A00ACC097 /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A267808C2189D05400ACC097 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A267808D2189D06A00ACC097 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A267808F2189D0A600ACC097 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A26780902189D0B300ACC097 /* Data Storage */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A26780902189D0B300ACC097 /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A26780912189D10E00ACC097 /* StorageManager.swift */,
+			);
+			path = "Data Storage";
+			sourceTree = "<group>";
+		};
+		A26780932189D2B300ACC097 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A26780972189D2F900ACC097 /* Main */,
+				A26780942189D2C200ACC097 /* Base Controllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A26780942189D2C200ACC097 /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A26780952189D2E100ACC097 /* BaseViewController.swift */,
+			);
+			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		A26780972189D2F900ACC097 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A267804F2189AADD00ACC097 /* ViewController.swift */,
+				A26780512189AADD00ACC097 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A26780982189D31300ACC097 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A26780992189D32600ACC097 /* XibLoadableView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26780582189AADF00ACC097 /* LaunchScreen.storyboard in Resources */,
+				A26780832189CF9B00ACC097 /* Localizable.strings in Resources */,
 				A26780552189AADF00ACC097 /* Assets.xcassets in Resources */,
 				A26780532189AADD00ACC097 /* Main.storyboard in Resources */,
 			);
@@ -362,8 +501,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26780882189D00B00ACC097 /* UIApplication+Extensions.swift in Sources */,
+				A267808B2189D03A00ACC097 /* Logger.swift in Sources */,
 				A26780502189AADD00ACC097 /* ViewController.swift in Sources */,
 				A267804E2189AADD00ACC097 /* AppDelegate.swift in Sources */,
+				A26780852189CFAE00ACC097 /* Strings.swift in Sources */,
+				A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */,
+				A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */,
+				A26780812189CEE200ACC097 /* Constants.swift in Sources */,
+				A267808E2189D06A00ACC097 /* User.swift in Sources */,
+				A26780922189D10E00ACC097 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L84MEYNYS7;
-				INFOPLIST_FILE = "OKR-List/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OKR-List/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -561,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L84MEYNYS7;
-				INFOPLIST_FILE = "OKR-List/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OKR-List/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

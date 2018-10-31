@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  OKR-List
+
+  Created by Alexander Yalchik on 10/31/18.
+  Copyright © 2018 Alexander Yalchik. All rights reserved.
+*/
+
+// Alerts
+"alert.ok" = "OK";
+"alert.cancel" = "Отмена";
