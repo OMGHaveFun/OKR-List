@@ -24,6 +24,7 @@
 		A26780922189D10E00ACC097 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780912189D10E00ACC097 /* StorageManager.swift */; };
 		A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780952189D2E100ACC097 /* BaseViewController.swift */; };
 		A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780992189D32600ACC097 /* XibLoadableView.swift */; };
+		A267809C2189DFF700ACC097 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A267809B2189DFF700ACC097 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		A26780912189D10E00ACC097 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A26780952189D2E100ACC097 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A26780992189D32600ACC097 /* XibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableView.swift; sourceTree = "<group>"; };
+		A267809B2189DFF700ACC097 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.debug.xcconfig"; sourceTree = "<group>"; };
 		F617A97EE9BC7ECC3DBD0A72 /* Pods-OKR-List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.release.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +194,7 @@
 		A267807D2189CE6300ACC097 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A267809B2189DFF700ACC097 /* GoogleService-Info.plist */,
 				A26780592189AADF00ACC097 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -300,6 +303,7 @@
 				A26780472189AADD00ACC097 /* Frameworks */,
 				A26780482189AADD00ACC097 /* Resources */,
 				4B36184D5ABA4B48FA39094F /* [CP] Embed Pods Frameworks */,
+				A267809D2189E15A00ACC097 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -396,6 +400,7 @@
 			files = (
 				A26780582189AADF00ACC097 /* LaunchScreen.storyboard in Resources */,
 				A26780832189CF9B00ACC097 /* Localizable.strings in Resources */,
+				A267809C2189DFF700ACC097 /* GoogleService-Info.plist in Resources */,
 				A26780552189AADF00ACC097 /* Assets.xcassets in Resources */,
 				A26780532189AADD00ACC097 /* Main.storyboard in Resources */,
 			);
@@ -493,6 +498,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OKR-List/Pods-OKR-List-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A267809D2189E15A00ACC097 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

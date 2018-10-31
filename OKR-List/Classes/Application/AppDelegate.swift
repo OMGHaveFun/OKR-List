@@ -1,12 +1,9 @@
 //
-//  AppDelegate.swift
-//  OKR-List
-//
-//  Created by Alexander Yalchik on 10/31/18.
 //  Copyright © 2018 Alexander Yalchik. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        FirebaseApp.configure()
+
         return true
     }
 
