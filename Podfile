@@ -6,47 +6,39 @@ use_frameworks!
 inhibit_all_warnings!
 
 # enforce Swift style and conventions
-pod 'SwiftLint'
+pod 'SwiftLint', '0.35.0'
 
 # Keychain
-pod 'SwiftKeychainWrapper'
+pod 'SwiftKeychainWrapper', '3.4.0'
 
 # Logger
-pod 'SwiftyBeaver'
+pod 'SwiftyBeaver', '1.8.0'
 
 # Networking
-pod 'Alamofire'
-pod 'Moya'
+pod 'Alamofire', '4.9.0'
+pod 'Moya', '12.0.1'
 
 # Data Mapping
-pod 'Moya-ObjectMapper'
+pod 'Moya-ObjectMapper', '2.8'
 
 # UI
-pod 'MBProgressHUD'
-pod 'IQKeyboardManagerSwift'
+pod 'MBProgressHUD', '1.1.0'
+pod 'IQKeyboardManagerSwift', '6.5.1'
 
 # Images
-pod 'Kingfisher'
+pod 'AlamofireImage', '3.5.2'
 
 # Database
-pod 'RealmSwift'
-
-# Firebase
-pod 'Firebase/Core'
-pod 'Firebase/Messaging'
-
-pod 'Fabric'
-pod 'Crashlytics'
+pod 'RealmSwift', '3.19.0'
 
 # Painless Attributed Strings
-pod 'SwiftRichString'
+pod 'SwiftRichString', '3.0.3'
 
 # Color
-pod 'Hue'
+pod 'Hue', '5.0.0'
 
 target 'OKR-ListTests' do
     inherit! :search_paths
-    pod 'Firebase/Core'
 end
 
 post_install do |installer|
