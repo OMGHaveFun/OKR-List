@@ -407,7 +407,7 @@ open class BaseDestination: Hashable, Equatable {
             return ObjectIdentifier($0) == ObjectIdentifier(filter)
         }
         #else
-        let index = filters.index {
+        let index = filters.firstIndex {
             return ObjectIdentifier($0) == ObjectIdentifier(filter)
         }
         #endif
