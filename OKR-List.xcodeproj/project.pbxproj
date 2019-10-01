@@ -25,6 +25,8 @@
 		A26780922189D10E00ACC097 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780912189D10E00ACC097 /* StorageManager.swift */; };
 		A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780952189D2E100ACC097 /* BaseViewController.swift */; };
 		A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780992189D32600ACC097 /* XibLoadableView.swift */; };
+		A29458C92343875A00B91121 /* NoteAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458C82343875A00B91121 /* NoteAddController.swift */; };
+		A29458CC23438F6B00B91121 /* RLMNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458CB23438F6B00B91121 /* RLMNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A26780912189D10E00ACC097 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A26780952189D2E100ACC097 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A26780992189D32600ACC097 /* XibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableView.swift; sourceTree = "<group>"; };
+		A29458C82343875A00B91121 /* NoteAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAddController.swift; sourceTree = "<group>"; };
+		A29458CB23438F6B00B91121 /* RLMNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMNote.swift; sourceTree = "<group>"; };
 		A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1D8E54DA9E463F759123EC /* Pods-OKR-List-OKR-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF36F01B9904DF67839BD74 /* Pods-OKR-List-OKR-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.release.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		A267808F2189D0A600ACC097 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A29458CA23438F5400B91121 /* Objects */,
 				A26780902189D0B300ACC097 /* Data Storage */,
 			);
 			path = Services;
@@ -288,6 +293,7 @@
 			children = (
 				A267804F2189AADD00ACC097 /* ViewController.swift */,
 				A26780512189AADD00ACC097 /* Main.storyboard */,
+				A29458C82343875A00B91121 /* NoteAddController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -298,6 +304,14 @@
 				A26780992189D32600ACC097 /* XibLoadableView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A29458CA23438F5400B91121 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A29458CB23438F6B00B91121 /* RLMNote.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,8 +522,10 @@
 				A267804E2189AADD00ACC097 /* AppDelegate.swift in Sources */,
 				A26780852189CFAE00ACC097 /* Strings.swift in Sources */,
 				A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */,
+				A29458C92343875A00B91121 /* NoteAddController.swift in Sources */,
 				A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */,
 				A26780812189CEE200ACC097 /* Constants.swift in Sources */,
+				A29458CC23438F6B00B91121 /* RLMNote.swift in Sources */,
 				A267808E2189D06A00ACC097 /* User.swift in Sources */,
 				A26780922189D10E00ACC097 /* StorageManager.swift in Sources */,
 			);
