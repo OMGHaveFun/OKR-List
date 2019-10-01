@@ -29,7 +29,7 @@ extension String {
         #if swift(>=5)
             return self.firstIndex(of: char)
         #else
-            return self.index(of: char)
+            return self.firstIndex(of: char)
         #endif
     }
 }
