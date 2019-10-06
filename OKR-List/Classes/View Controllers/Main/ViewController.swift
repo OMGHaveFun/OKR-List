@@ -26,7 +26,6 @@ class ViewController: UIViewController {
 
     private func updateData() {
         noteItems = StorageManager.shared.notes()
-
         tableView.reloadData()
     }
 
@@ -44,6 +43,19 @@ extension ViewController: UITableViewDataSource {
         cell.noteData = note
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let note = noteItems[indexPath.row]
+            StorageManager.shared.deleteNote(note: note)
+            noteItems = StorageManager.shared.notes()
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 
 }
