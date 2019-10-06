@@ -76,6 +76,20 @@ extension StorageManager {
         return Array(realm.objects(RLMNote.self))
     }
 
+    func deleteNote(note: RLMNote) {
+        guard let realm = realm else {
+            print("| Realm | delete note: return")
+            return }
+
+        do {
+            try realm.safeWrite {
+                realm.delete(note)
+            }
+        } catch let error as NSError {
+            print("| Realm | delete note: \(error)")
+        }
+    }
+
 }
 
 // MARK: - Clear all Realm Storage !
