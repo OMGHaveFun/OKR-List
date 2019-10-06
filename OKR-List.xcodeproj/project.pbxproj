@@ -27,6 +27,7 @@
 		A267809A2189D32600ACC097 /* XibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26780992189D32600ACC097 /* XibLoadableView.swift */; };
 		A29458C92343875A00B91121 /* NoteAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458C82343875A00B91121 /* NoteAddController.swift */; };
 		A29458CC23438F6B00B91121 /* RLMNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458CB23438F6B00B91121 /* RLMNote.swift */; };
+		A2CA254A234A44390052BDFF /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2549234A44390052BDFF /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A26780992189D32600ACC097 /* XibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadableView.swift; sourceTree = "<group>"; };
 		A29458C82343875A00B91121 /* NoteAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAddController.swift; sourceTree = "<group>"; };
 		A29458CB23438F6B00B91121 /* RLMNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMNote.swift; sourceTree = "<group>"; };
+		A2CA2549234A44390052BDFF /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1D8E54DA9E463F759123EC /* Pods-OKR-List-OKR-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF36F01B9904DF67839BD74 /* Pods-OKR-List-OKR-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.release.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				A267804F2189AADD00ACC097 /* ViewController.swift */,
 				A26780512189AADD00ACC097 /* Main.storyboard */,
 				A29458C82343875A00B91121 /* NoteAddController.swift */,
+				A2CA2549234A44390052BDFF /* NoteCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26780882189D00B00ACC097 /* UIApplication+Extensions.swift in Sources */,
+				A2CA254A234A44390052BDFF /* NoteCell.swift in Sources */,
 				A267808B2189D03A00ACC097 /* Logger.swift in Sources */,
 				A26780502189AADD00ACC097 /* ViewController.swift in Sources */,
 				A267804E2189AADD00ACC097 /* AppDelegate.swift in Sources */,
