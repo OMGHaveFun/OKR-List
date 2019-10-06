@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var noteItems: [RLMNote] = []
+    var selectedCells: [Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,9 @@ extension ViewController: UITableViewDataSource {
         let note = noteItems[indexPath.row]
         cell.noteData = note
 
+        print("selectedCells: \(selectedCells)")
+        cell.accessoryType = selectedCells.contains(indexPath.row) ? .checkmark : .none
+
         return cell
     }
 
@@ -65,7 +69,13 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if selectedCells.contains(indexPath.row) {
+            guard let index = selectedCells.firstIndex(of: indexPath.row) else { return }
+            selectedCells.remove(at: index)
+        } else {
+            selectedCells.append(indexPath.row)
+        }
+
+        tableView.reloadData()
     }
-
 }
-
