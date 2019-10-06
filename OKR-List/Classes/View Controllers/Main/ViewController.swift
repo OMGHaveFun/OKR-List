@@ -51,10 +51,12 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let note = noteItems[indexPath.row]
-            StorageManager.shared.deleteNote(note: note)
-            noteItems = StorageManager.shared.notes()
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            AlertHelper.showDeleteNoteAlert {
+                let note = self.noteItems[indexPath.row]
+                StorageManager.shared.deleteNote(note: note)
+                self.noteItems = StorageManager.shared.notes()
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
         }
     }
 

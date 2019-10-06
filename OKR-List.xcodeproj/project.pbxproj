@@ -28,6 +28,7 @@
 		A29458C92343875A00B91121 /* NoteAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458C82343875A00B91121 /* NoteAddController.swift */; };
 		A29458CC23438F6B00B91121 /* RLMNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29458CB23438F6B00B91121 /* RLMNote.swift */; };
 		A2CA254A234A44390052BDFF /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2549234A44390052BDFF /* NoteCell.swift */; };
+		A2CA254C234A505C0052BDFF /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA254B234A505C0052BDFF /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		A29458C82343875A00B91121 /* NoteAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAddController.swift; sourceTree = "<group>"; };
 		A29458CB23438F6B00B91121 /* RLMNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMNote.swift; sourceTree = "<group>"; };
 		A2CA2549234A44390052BDFF /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		A2CA254B234A505C0052BDFF /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		A34620C7AEAF959ACCB9BB01 /* Pods-OKR-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List/Pods-OKR-List.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1D8E54DA9E463F759123EC /* Pods-OKR-List-OKR-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.debug.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEF36F01B9904DF67839BD74 /* Pods-OKR-List-OKR-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKR-List-OKR-ListTests.release.xcconfig"; path = "Target Support Files/Pods-OKR-List-OKR-ListTests/Pods-OKR-List-OKR-ListTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				A267808A2189D03A00ACC097 /* Logger.swift */,
+				A2CA254B234A505C0052BDFF /* AlertHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				A2CA254A234A44390052BDFF /* NoteCell.swift in Sources */,
 				A267808B2189D03A00ACC097 /* Logger.swift in Sources */,
 				A26780502189AADD00ACC097 /* ViewController.swift in Sources */,
+				A2CA254C234A505C0052BDFF /* AlertHelper.swift in Sources */,
 				A267804E2189AADD00ACC097 /* AppDelegate.swift in Sources */,
 				A26780852189CFAE00ACC097 /* Strings.swift in Sources */,
 				A26780962189D2E100ACC097 /* BaseViewController.swift in Sources */,
