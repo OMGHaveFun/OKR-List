@@ -30,7 +30,9 @@ class NoteAddController: BaseViewController {
     @IBAction func noteAddPressed(_ sender: UIButton) {
         guard let text = textView.text else { return }
 
-        StorageManager.shared.store(text: text)
+        if !text.isEmpty {
+            StorageManager.shared.store(text: text)
+        }
         navigationController?.popViewController(animated: true)
     }
 
