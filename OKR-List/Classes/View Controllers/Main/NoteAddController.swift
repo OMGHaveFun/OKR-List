@@ -25,6 +25,7 @@ class NoteAddController: BaseViewController {
         placeholderLabel.textColor = UIColor.lightGray
         placeholderLabel.isHidden = !textView.text.isEmpty
 
+        textView.becomeFirstResponder()
     }
 
     @IBAction func noteAddPressed(_ sender: UIButton) {
