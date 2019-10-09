@@ -31,6 +31,7 @@ class NoteAddController: BaseViewController {
         guard let text = textView.text else { return }
 
         StorageManager.shared.store(text: text)
+        navigationController?.popViewController(animated: true)
     }
 
 }
