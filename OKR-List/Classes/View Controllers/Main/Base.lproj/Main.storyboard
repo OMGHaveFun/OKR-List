@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--Notes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OKR_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Main" id="xbp-pJ-MEv">
+                    <navigationItem key="navigationItem" title="Notes" id="xbp-pJ-MEv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aJd-xc-oqc">
                             <connections>
                                 <segue destination="LOd-z2-e2y" kind="show" id="Q1j-j6-8D9"/>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="65" y="2578"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="scD-XW-fKF">
             <objects>
                 <viewController id="e64-Pw-meT" sceneMemberID="viewController">
@@ -95,7 +95,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3Ag-cj-AWq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PDt-hh-WhU"/>
+                    <navigationItem key="navigationItem" title="Settings" id="PDt-hh-WhU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9u6-pe-hkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="65" y="1844"/>
         </scene>
-        <!--View Controller-->
+        <!--Tamagotchi-->
         <scene sceneID="mNx-RN-jyL">
             <objects>
                 <viewController id="zpv-xq-TXK" sceneMemberID="viewController">
@@ -128,7 +128,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="C0I-40-aKG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3fp-gM-LJn"/>
+                    <navigationItem key="navigationItem" title="Tamagotchi" id="3fp-gM-LJn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LK-Lb-oZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="30" y="1057"/>
         </scene>
-        <!--View Controller-->
+        <!--Constructor-->
         <scene sceneID="4sH-pH-OaX">
             <objects>
                 <viewController id="tjQ-Pz-p1O" sceneMemberID="viewController">
@@ -161,7 +161,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="G5H-gj-s4c"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8j8-ii-UUH"/>
+                    <navigationItem key="navigationItem" title="Constructor" id="8j8-ii-UUH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yD2-Bb-Tzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
